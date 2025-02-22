@@ -5,6 +5,21 @@ user agent stylesheet
 
 css - Cascading (overriding) Stylesheets
 
+-----------
+# flexbox
+-----------
+
+flex
+
+main axis
+cross axis
+
+justify-content --main axis
+align items --cross axis
+
+flex-wrap --wrap --reverse
+
+gap // margin
 
 
 
