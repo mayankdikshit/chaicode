@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>website</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box; /* flush css */
+      }
+      nav {
+        display: flex;
+        background-color: #1f2937;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px 80px;
+        color: #fff;
+      }
+      nav div ul {
+        display: flex;
+        gap: 25px;
+        list-style-type: none;
+        cursor: pointer;
+      }
+      nav div button {
+        padding: 5px 10px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+      }
+      nav div button:hover {
+        background-color: #1a61d5;
+        color: #fff;
+      }
+      .hero {
+        display: flex;
+        padding: 40px 80px;
+        background-color: #1f2937;
+        color: #fff;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .hero div {
+        width: 50%;
+        padding: 20px;
+      }
+      .hero div h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+      }
+      .hero div p {
+        margin-bottom: 1rem;
+        color: #b9b9b9;
+        font-size: 1.2rem;
+      }
+      .hero div button {
+        padding: 4px 5px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        width: 200px;
+      }
+      .hero div button:hover {
+        color: #fff;
+        background-color: #787878;
+      }
+      .hero div img {
+        width: 100%;
+        border-radius: 20px;
+        object-fit: cover;
+        box-shadow: 0 0 10px #fff;
+      }
+      .hero div img:hover {
+        transform: rotate(10deg);
+        transition: all 0.5 ease-in-out;
+      }
+      .logo-text {
+        text-align: center;
+        margin: 20px 0;
+        font-size: 42px;
+        color: #1f2937;
+      }
+      .logo {
+        margin: 20px 10%;
+        display: flex;
+        text-align: center;
+        justify-content: space-around;
+        border: 2px solid #eee;
+        padding: 20px 20px;
+      }
+      .logo div img {
+        width: 100px;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+
+      .three-card {
+        margin: 50px;
+        display: flex;
+        padding: 40px 80px;
+        justify-content: space-evenly;
+        border: 1px solid;
+        box-shadow: 0 0 10px black;
+      }
+
+      .card {
+        border: 1px solid #ddd;
+        width: 25%;
+        border-radius: 10px;
+        text-align: center;
+        padding: 10px;
+        box-shadow: 0 0 10px black;
+      }
+      .card img {
+        width: 100px;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+      .card p, h3 {
+        margin: 10px 0;
+      }
+
+      /* Media query */
+
+      @media screen and (max-width:976px){
+        body {
+          background-color: red;
+        }
+      }
+      @media screen and (max-width:480px){
+        body {
+          background-color: orange; bottom: ;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div>
+        <p>MyLogo</p>
+      </div>
+      <div>
+        <ul>
+          <li>Home</li>
+          <li>About us</li>
+          <li>Conatct</li>
+        </ul>
+      </div>
+      <div>
+        <button>Signup</button>
+        <button>Login</button>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div>
+        <h1>Hero Title</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum neque
+          enim pariatur ea tenetur laborum sequi incidunt, est minus a esse,
+          cumque mollitia. Id incidunt vel praesentium natus inventore neque!
+        </p>
+        <button>Signup</button>
+      </div>
+
+      <div>
+        <img src="sample.jpeg" alt="sample image" />
+      </div>
+    </section>
+
+    <h2 class="logo-text">Our Clients</h2>
+
+    <section class="logo">
+      <div>
+        <img src="netflix.jpeg" alt="" />
+      </div>
+      <div>
+        <img src="microsoft.png" alt="" />
+      </div>
+      <div>
+        <img src="github.jpeg" alt="" />
+      </div>
+      <div>
+        <img src="apple.png" alt="" />
+      </div>
+      <div>
+        <img src="jira.png" alt="" />
+      </div>
+    </section>
+
+    <div class="three-card">
+      <div class="card">
+        <img src="github.jpeg" alt="" />
+        <h3>Title</h3>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos id
+          distinctio corporis, voluptatum fugiat hic quia molestias ipsa
+          assumenda aliquam.
+        </p>
+      </div>
+      <div class="card">
+        <img src="github.jpeg" alt="" />
+        <h3>Title</h3>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos id
+          distinctio corporis, voluptatum fugiat hic quia molestias ipsa
+          assumenda aliquam.
+        </p>
+      </div>
+      <div class="card">
+        <img src="github.jpeg" alt="" />
+        <h3>Title</h3>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos id
+          distinctio corporis, voluptatum fugiat hic quia molestias ipsa
+          assumenda aliquam.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
