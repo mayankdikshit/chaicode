@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .container {
+            border: 1px solid #ccc;
+            display: grid;
+            grid-template-rows: repeat(3, 60px);
+            grid-template-columns: repeat(3, 60px);
+            grid-gap: 10px;
+        }
+        .container div {
+            border: 1px solid black;
+        }
+         
+        .box-1 {
+            background-color: red;
+            grid-area: 1 / 1 / 2 / 2 ;
+        }
+        .box-2 {
+            background-color: lightcoral;
+            grid-area: 1 / 2 / 1 / 4 ;
+        }
+        .box-3 {
+            background-color: lightblue;
+            grid-area: 2 / 1 / 2 / 3 ;
+        }
+        .box-4 {
+            background-color: greenyellow;
+            grid-area: 2 / 3 / 4 / 4 ;
+        }
+        .box-5 {
+            background-color: yellow;
+            grid-area: 3 / 1 / 4 / 2 ;
+        }
+        .box-6 {
+            background-color: #ccc;
+            grid-area: 3 / 2 / 3 / 3 ;
+        }
+
+    </style>
+  </head>
+  <body>
+    <h3>This is Grid</h3>
+    <div class="container">
+        <div class="box-1">Box 1</div>
+        <div class="box-2">Box 2</div>
+        <div class="box-3">Box 3</div>
+        <div class="box-4">Box 4</div>
+        <div class="box-5">Box 5</div>
+        <div class="box-6">Box 6</div>
+    </div>
+  </body>
+</html>
