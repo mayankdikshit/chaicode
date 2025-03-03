@@ -11,4 +11,8 @@ if (age>=18){
 let yourAge = (age>=18) ? console.log("you can drive") : console.log("you're a kid");
 
 
-let 
+
+let a = 10
+let b;
+
+(a == 9) ? console.log("True") : console.log("False")
