@@ -13,7 +13,6 @@ if (!Array.prototype.myFilter){
     }
 }
 
-
 const arr = [1,2,3,4,5,6]
 
 const n = arr.myFilter((e)=>e%2==0)
